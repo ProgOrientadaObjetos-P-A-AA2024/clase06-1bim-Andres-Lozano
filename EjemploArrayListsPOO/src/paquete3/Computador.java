@@ -1,16 +1,48 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquete3;
 
-/**
- *
- * @author reroes
- */
+
 public class Computador {
-   private String marca;
-   private Procesador procesador;
-   private Memoria memoria;
-   private double costoComputador;
+
+    private String marca;
+    private Procesador procesador;
+    private Memoria memoria;
+    private double costoComputador;
+
+    
+
+    public void establecerMarca(String n) {
+        marca = n;
+    }
+
+    public void establecerProcesador(Procesador p) {
+        procesador = p;
+    }
+
+    public void establecerMemoria(Memoria p) {
+        memoria = p;
+    }
+
+    public void establecerCosto() {
+        costoComputador = procesador.obtenerCosto() + memoria.obtenerCosto();
+
+    }
+
+    public String obtenerMarca() {
+        return marca;
+    }
+
+    public double obtenerCosto() {
+        return costoComputador;
+    }
+
+    public Procesador obtenerProcesador() {
+        return procesador;
+    }
+
+    public Memoria obtenerMemoria() {
+        return memoria;
+    }
+
 }
+

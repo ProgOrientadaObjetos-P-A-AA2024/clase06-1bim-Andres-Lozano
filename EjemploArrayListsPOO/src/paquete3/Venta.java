@@ -1,17 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package paquete3;
+
+import java.util.Scanner;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author reroes
- */
+
 public class Venta {
+
+    Scanner sc = new Scanner(System.in);
     private double valorVenta;
-    private ArrayList<Computador> computadoras; 
+    private ArrayList<Computador> computadoras;
+
+    public Venta(ArrayList<Computador> c) {
+        computadoras = c;
+
+    }
+
+
+
+    public void obtenerComputadoras(ArrayList<Computador> p) {
+
+        computadoras = p;
+    }
+    public ArrayList<Computador> obtenerComputadoras(){
+        return computadoras;
+         
+    }
+    
+    
+    
 
 }
