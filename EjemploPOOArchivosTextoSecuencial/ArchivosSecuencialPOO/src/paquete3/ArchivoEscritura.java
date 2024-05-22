@@ -38,7 +38,7 @@ public class ArchivoEscritura {
                 obtenerNombreArchivo());;
     }
 
-    public void establecerRegistro(Calificacion n) {
+     public void establecerRegistro(Calificacion n) {
         registro = n;
     }
 

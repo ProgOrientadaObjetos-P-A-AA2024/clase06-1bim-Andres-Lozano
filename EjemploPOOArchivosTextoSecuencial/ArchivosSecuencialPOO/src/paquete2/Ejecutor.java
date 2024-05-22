@@ -18,7 +18,7 @@ public class Ejecutor {
         Profesor profesor2 = new Profesor("Gregory Walsh", "nombramiento");
         Profesor profesor3 = new Profesor("Kevin Page", "nombramiento");
         
-        
+        // este escribe o actualiza la informacion junto con la informacion que esta en el archivo
         ArchivoEscritura archivo = new ArchivoEscritura(nombreArchivo);
         
         // establecer el valor del atributo registro
@@ -37,6 +37,7 @@ public class Ejecutor {
         archivo.establecerSalida();
         
         // proceso para lectura del archivo
+        // lee el archivo para sacar el separador y luego combertirlos en 2 parametros
         ArchivoLectura lectura = new ArchivoLectura(nombreArchivo);
         lectura.establecerLista();
         // System.out.println(lectura.toString());

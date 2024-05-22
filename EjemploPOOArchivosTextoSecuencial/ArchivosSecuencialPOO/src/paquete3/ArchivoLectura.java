@@ -80,6 +80,7 @@ public class ArchivoLectura {
 
                 ArrayList<String> cadenaProfesor = new ArrayList<>(
                         Arrays.asList(profesor.split("\\|")));
+                // se realiza 2 back slash para que pueda aceptar otro caracter diferente de "," y ";"
                 // ["Tara Hernandez", "contratado"]
                 //        0                 1
 
